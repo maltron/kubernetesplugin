@@ -1,0 +1,892 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {},
+    "items": [
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e9975ff008a6",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e9975ff008a6",
+                "uid": "5995cbfe-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59120",
+                "creationTimestamp": "2016-10-25T23:18:34Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59118"
+            },
+            "reason": "Scheduled",
+            "message": "Successfully assigned wordpress-2-deploy to openshift.example.com",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "firstTimestamp": "2016-10-25T23:18:34Z",
+            "lastTimestamp": "2016-10-25T23:18:34Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e997b71e6a7f",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e997b71e6a7f",
+                "uid": "5a74ec0d-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59123",
+                "creationTimestamp": "2016-10-25T23:18:35Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59119",
+                "fieldPath": "spec.containers{deployment}"
+            },
+            "reason": "Pulled",
+            "message": "Container image \"openshift3/ose-deployer:v3.3.0.32\" already present on machine",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:35Z",
+            "lastTimestamp": "2016-10-25T23:18:35Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e997e02d753b",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e997e02d753b",
+                "uid": "5addfc23-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59124",
+                "creationTimestamp": "2016-10-25T23:18:36Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59119",
+                "fieldPath": "spec.containers{deployment}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id 205321a8864c",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:36Z",
+            "lastTimestamp": "2016-10-25T23:18:36Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e997f6265100",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e997f6265100",
+                "uid": "5b1639e1-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59125",
+                "creationTimestamp": "2016-10-25T23:18:36Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59119",
+                "fieldPath": "spec.containers{deployment}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id 205321a8864c",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:36Z",
+            "lastTimestamp": "2016-10-25T23:18:36Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e99d8afc5b9f",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e99d8afc5b9f",
+                "uid": "69603319-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59163",
+                "creationTimestamp": "2016-10-25T23:19:00Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59119",
+                "fieldPath": "spec.containers{deployment}"
+            },
+            "reason": "Killing",
+            "message": "Killing container with docker id 205321a8864c: Need to kill pod.",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:00Z",
+            "lastTimestamp": "2016-10-25T23:19:00Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-deploy.1480e99da36bc4bb",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-deploy.1480e99da36bc4bb",
+                "uid": "699e97eb-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59166",
+                "creationTimestamp": "2016-10-25T23:19:01Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-deploy",
+                "uid": "5991bc31-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59119"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"TeardownNetwork\" for \"wordpress-2-deploy_testwordpress\" with TeardownNetworkError: \"Failed to teardown network for pod \\\"5991bc31-9b09-11e6-b014-08002736df16\\\" using network plugins \\\"redhat/openshift-ovs-subnet\\\": Error running network teardown script: Could not find IP address for container 21856f85f6752e437fe57ac29d10bd14b35a6b53b78f1e0885a6406340b70107\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:01Z",
+            "lastTimestamp": "2016-10-25T23:19:01Z",
+            "count": 1,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9985b62eca2",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9985b62eca2",
+                "uid": "5c19e23f-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59134",
+                "creationTimestamp": "2016-10-25T23:18:38Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59130"
+            },
+            "reason": "Scheduled",
+            "message": "Successfully assigned wordpress-2-ilo80 to openshift.example.com",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "firstTimestamp": "2016-10-25T23:18:38Z",
+            "lastTimestamp": "2016-10-25T23:18:38Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e998c463522e",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e998c463522e",
+                "uid": "5d265207-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59264",
+                "creationTimestamp": "2016-10-25T23:18:40Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Pulling",
+            "message": "pulling image \"wordpress@sha256:503676370ed3dae3a9f01c086ee1c7d76d683c2e7fcf2ad41f64bb32fd1d0bcd\"",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:40Z",
+            "lastTimestamp": "2016-10-25T23:22:20Z",
+            "count": 6,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99ac4e15001",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99ac4e15001",
+                "uid": "624642dc-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59267",
+                "creationTimestamp": "2016-10-25T23:18:48Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Pulled",
+            "message": "Successfully pulled image \"wordpress@sha256:503676370ed3dae3a9f01c086ee1c7d76d683c2e7fcf2ad41f64bb32fd1d0bcd\"",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:48Z",
+            "lastTimestamp": "2016-10-25T23:22:28Z",
+            "count": 6,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99ae144d1a5",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99ae144d1a5",
+                "uid": "628edc44-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59142",
+                "creationTimestamp": "2016-10-25T23:18:49Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id be9415eb445d",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:49Z",
+            "lastTimestamp": "2016-10-25T23:18:49Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99af41f5c44",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99af41f5c44",
+                "uid": "62bf1dd9-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59143",
+                "creationTimestamp": "2016-10-25T23:18:49Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id be9415eb445d",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:49Z",
+            "lastTimestamp": "2016-10-25T23:18:49Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99d22a51a9c",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99d22a51a9c",
+                "uid": "6854f0e6-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59150",
+                "creationTimestamp": "2016-10-25T23:18:58Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id 5ffa4d69c7f0",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:58Z",
+            "lastTimestamp": "2016-10-25T23:18:58Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99d35bb09e6",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99d35bb09e6",
+                "uid": "6885ca46-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59151",
+                "creationTimestamp": "2016-10-25T23:18:59Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id 5ffa4d69c7f0",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:18:59Z",
+            "lastTimestamp": "2016-10-25T23:18:59Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99d9779706a",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99d9779706a",
+                "uid": "698129d7-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59321",
+                "creationTimestamp": "2016-10-25T23:19:00Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "BackOff",
+            "message": "Back-off restarting failed docker container",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:00Z",
+            "lastTimestamp": "2016-10-25T23:24:30Z",
+            "count": 25,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e99d977aec8a",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e99d977aec8a",
+                "uid": "698022a5-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59169",
+                "creationTimestamp": "2016-10-25T23:19:00Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"StartContainer\" for \"wordpress\" with CrashLoopBackOff: \"Back-off 10s restarting failed container=wordpress pod=wordpress-2-ilo80_testwordpress(5c148df2-9b09-11e6-b014-08002736df16)\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:00Z",
+            "lastTimestamp": "2016-10-25T23:19:01Z",
+            "count": 2,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9a3505435b8",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9a3505435b8",
+                "uid": "78260d85-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59178",
+                "creationTimestamp": "2016-10-25T23:19:25Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id b50d7aca6fd6",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:25Z",
+            "lastTimestamp": "2016-10-25T23:19:25Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9a3658da814",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9a3658da814",
+                "uid": "785c60ea-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59179",
+                "creationTimestamp": "2016-10-25T23:19:25Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id b50d7aca6fd6",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:25Z",
+            "lastTimestamp": "2016-10-25T23:19:25Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9a3c0fed117",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9a3c0fed117",
+                "uid": "79468fce-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59192",
+                "creationTimestamp": "2016-10-25T23:19:27Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"StartContainer\" for \"wordpress\" with CrashLoopBackOff: \"Back-off 20s restarting failed container=wordpress pod=wordpress-2-ilo80_testwordpress(5c148df2-9b09-11e6-b014-08002736df16)\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:19:27Z",
+            "lastTimestamp": "2016-10-25T23:19:40Z",
+            "count": 2,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9ac91532625",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9ac91532625",
+                "uid": "8fd6b00d-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59202",
+                "creationTimestamp": "2016-10-25T23:20:05Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id dd65a49db15f",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:05Z",
+            "lastTimestamp": "2016-10-25T23:20:05Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9aca6f3a2ac",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9aca6f3a2ac",
+                "uid": "900e1e53-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59203",
+                "creationTimestamp": "2016-10-25T23:20:05Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id dd65a49db15f",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:05Z",
+            "lastTimestamp": "2016-10-25T23:20:05Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9ad00f85ee1",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9ad00f85ee1",
+                "uid": "90f490df-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59220",
+                "creationTimestamp": "2016-10-25T23:20:07Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"StartContainer\" for \"wordpress\" with CrashLoopBackOff: \"Back-off 40s restarting failed container=wordpress pod=wordpress-2-ilo80_testwordpress(5c148df2-9b09-11e6-b014-08002736df16)\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:07Z",
+            "lastTimestamp": "2016-10-25T23:20:34Z",
+            "count": 4,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9b8d50921de",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9b8d50921de",
+                "uid": "af3c5f96-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59228",
+                "creationTimestamp": "2016-10-25T23:20:57Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id 12becd20b0e8",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:57Z",
+            "lastTimestamp": "2016-10-25T23:20:57Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9b8e8f1cee8",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9b8e8f1cee8",
+                "uid": "af6f4d47-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59229",
+                "creationTimestamp": "2016-10-25T23:20:58Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id 12becd20b0e8",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:58Z",
+            "lastTimestamp": "2016-10-25T23:20:58Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9b9444612cf",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9b9444612cf",
+                "uid": "b0592d95-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59260",
+                "creationTimestamp": "2016-10-25T23:20:59Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"StartContainer\" for \"wordpress\" with CrashLoopBackOff: \"Back-off 1m20s restarting failed container=wordpress pod=wordpress-2-ilo80_testwordpress(5c148df2-9b09-11e6-b014-08002736df16)\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:20:59Z",
+            "lastTimestamp": "2016-10-25T23:22:08Z",
+            "count": 7,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9ce33fde846",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9ce33fde846",
+                "uid": "e5f1fc76-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59268",
+                "creationTimestamp": "2016-10-25T23:22:29Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Created",
+            "message": "Created container with docker id 3ca0376478c5",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:22:29Z",
+            "lastTimestamp": "2016-10-25T23:22:29Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9ce4e4366f3",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9ce4e4366f3",
+                "uid": "e635588a-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59269",
+                "creationTimestamp": "2016-10-25T23:22:30Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131",
+                "fieldPath": "spec.containers{wordpress}"
+            },
+            "reason": "Started",
+            "message": "Started container with docker id 3ca0376478c5",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:22:30Z",
+            "lastTimestamp": "2016-10-25T23:22:30Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2-ilo80.1480e9ceb0dfde2e",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2-ilo80.1480e9ceb0dfde2e",
+                "uid": "e731c647-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59320",
+                "creationTimestamp": "2016-10-25T23:22:31Z"
+            },
+            "involvedObject": {
+                "kind": "Pod",
+                "namespace": "testwordpress",
+                "name": "wordpress-2-ilo80",
+                "uid": "5c148df2-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59131"
+            },
+            "reason": "FailedSync",
+            "message": "Error syncing pod, skipping: failed to \"StartContainer\" for \"wordpress\" with CrashLoopBackOff: \"Back-off 2m40s restarting failed container=wordpress pod=wordpress-2-ilo80_testwordpress(5c148df2-9b09-11e6-b014-08002736df16)\"\n",
+            "source": {
+                "component": "kubelet",
+                "host": "openshift.example.com"
+            },
+            "firstTimestamp": "2016-10-25T23:22:31Z",
+            "lastTimestamp": "2016-10-25T23:24:30Z",
+            "count": 10,
+            "type": "Warning"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress-2.1480e9985a4661f9",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress-2.1480e9985a4661f9",
+                "uid": "5c178b97-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59132",
+                "creationTimestamp": "2016-10-25T23:18:38Z"
+            },
+            "involvedObject": {
+                "kind": "ReplicationController",
+                "namespace": "testwordpress",
+                "name": "wordpress-2",
+                "uid": "598bc2a7-9b09-11e6-b014-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59128"
+            },
+            "reason": "SuccessfulCreate",
+            "message": "Created pod: wordpress-2-ilo80",
+            "source": {
+                "component": "replication-controller"
+            },
+            "firstTimestamp": "2016-10-25T23:18:38Z",
+            "lastTimestamp": "2016-10-25T23:18:38Z",
+            "count": 1,
+            "type": "Normal"
+        },
+        {
+            "kind": "Event",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "wordpress.1480e9975cb00e6c",
+                "namespace": "testwordpress",
+                "selfLink": "/api/v1/namespaces/testwordpress/events/wordpress.1480e9975cb00e6c",
+                "uid": "598d88cd-9b09-11e6-b014-08002736df16",
+                "resourceVersion": "59115",
+                "creationTimestamp": "2016-10-25T23:18:34Z"
+            },
+            "involvedObject": {
+                "kind": "DeploymentConfig",
+                "namespace": "testwordpress",
+                "name": "wordpress",
+                "uid": "1c174837-9ae8-11e6-b8b3-08002736df16",
+                "apiVersion": "v1",
+                "resourceVersion": "59113"
+            },
+            "reason": "DeploymentCreated",
+            "message": "Created new deployment \"wordpress-2\" for version 2",
+            "source": {
+                "component": "deploymentconfig-controller"
+            },
+            "firstTimestamp": "2016-10-25T23:18:34Z",
+            "lastTimestamp": "2016-10-25T23:18:34Z",
+            "count": 1,
+            "type": "Normal"
+        }
+    ]
+}
