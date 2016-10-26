@@ -1,4 +1,4 @@
-package net.nortlam.kubernetes.api.toplevel;
+package net.nortlam.kubernetes.api.v1;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author mauricio
  */
 @XmlRootElement(name = "event")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Event implements Serializable {
     
     /**
@@ -50,7 +50,7 @@ public class Event implements Serializable {
      * The object that this event is about.
      */
     @XmlElement(name="involvedObject", required = true, type = ObjectReference.class)
-    private ObjectRererence involvedObject;
+    private ObjectReference involvedObject;
     
     /**
      * This should be a short, machine understandable string that gives the 

@@ -1,4 +1,4 @@
-package net.nortlam.kubernetes.api.toplevel;
+package net.nortlam.kubernetes.api.v1;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 
  * @author Mauricio "Maltron" Leal */
 @XmlRootElement(name = "metadata")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ObjectMeta implements Serializable {
 
     /**
@@ -92,8 +92,8 @@ public class ObjectMeta implements Serializable {
      * 
      * Populated by the system. Read-only.
      */
-    @XmlElement(name = "generation", required = false, type=int.class)
-    private int generation;
+    @XmlElement(name = "generation", required = false, type=long.class)
+    private long generation;
     
     /**
      * CreationTimestamp is a timestamp representing the server time when this 
@@ -132,8 +132,8 @@ public class ObjectMeta implements Serializable {
      * it will be removed from the system. Only set when deletionTimestamp 
      * is also set. May only be shortened. Read-only.
      */
-    @XmlElement(name = "deletionGracePeriodSeconds", required = false, type=int.class)
-    private int deletionGracePeriodSeconds;
+    @XmlElement(name = "deletionGracePeriodSeconds", required = false, type=long.class)
+    private long deletionGracePeriodSeconds;
     
     /**
      * Map of string keys and values that can be used to organize and 
@@ -162,8 +162,8 @@ public class ObjectMeta implements Serializable {
      * controller, with the controller field set to true. 
      * There cannot be more than one managing controller.
      */
-//    @XmlElement(name = "ownerReferences", required = false, type=OwnerReference.class)
-//    private OnwerReference ownerReferences;
+    @XmlElement(name = "ownerReferences", required = false, type=OwnerReference.class)
+    private OwnerReference ownerReferences;
     
     /**
      * Must be empty before the object is deleted from the registry. 
