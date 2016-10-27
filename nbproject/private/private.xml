@@ -12,5 +12,20 @@
             <file>file:/home/mauricio/NetBeansProjects/exec/Test/src/net/nortlam/openshift/resource/Reason.java</file>
             <file>file:/home/mauricio/NetBeansProjects/exec/Test/src/Test1.java</file>
         </group>
+        <group name="NetBeans Platform">
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/Container.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/ContainerStatus.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/Event.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/OwnerReference.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/Lifecycle.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/ObjectReference.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/ExecAction.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/SecurityContext.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/PodSpec.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/ObjectMeta.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/EventSource.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/Pod.java</file>
+            <file>file:/Users/mauricio/NetBeansProjects/kubernetes/kubernetesplugin/src/net/nortlam/kubernetes/api/v1/PodCondition.java</file>
+        </group>
     </open-files>
 </project-private>
